@@ -1,0 +1,51 @@
+\documentclass{scrbook}
+
+\input{style}
+\input{macros}
+
+% Set title and author used in the PDF meta data
+\hypersetup{
+  pdftitle={Künstliches Neuron},
+  pdfauthor={Kevin Martens, Jannis Meissner}
+}
+
+% Depending on which of the following two color schemes you import your thesis will be in color or grayscale. I recommend to generate a colored version as a PDF and a grayscale version for printing.
+
+\input{schema-color}
+%\input{schema-gray}
+
+\newcommand{\duedate}{15. Juli 2016}
+
+\begin{document}
+  \frontmatter
+  \include{title}
+
+
+  \include{abstract}
+
+  \cleardoublepage
+  \phantomsection
+  \pdfbookmark{Inhaltsverzeichnis}{tableofcontents}
+  \markboth{Inhaltsverzeichnis}{}
+  \tableofcontents
+
+  \mainmatter
+  \include{einleitung}
+  \include{biologischegrundlagen}
+  \include{konzept}
+  
+  \include{fazit}
+
+
+  \backmatter
+
+  \cleardoublepage
+  \phantomsection
+  \pdfbookmark{Abbildungsverzeichnis}{listoffigures}
+  \listoffigures
+
+  \cleardoublepage
+  \phantomsection
+  \pdfbookmark{Literaturverzeichnis}{bibliography}
+  \bibliography{literature}
+\end{document}
