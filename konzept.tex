@@ -3,7 +3,7 @@
 \chapter{Konzept}
 \label{chapter-konzept}
 
-Mit der Biologie als Vorbild wird nun durch eine passende Modellbildung eine für die Informationstechnik verwendbare Lösung gefunden. Durch eine grobe Verallgemeinerung wird das System vereinfacht – unter Erhaltung der wesentlichen Eigenschaften. Die Synapsen der Nervenzelle werden hierbei durch die Addition gewichteter Eingaben abgebildet, die Aktivierung des Zellkerns durch eine Aktivierungsfunktion mit Schwellenwert. Die Verwendung eines Addierers und Schwellenwerts findet sich so schon in der McCulloch-Pitts-Zelle von 1943.
+Mit der Biologie als Vorbild wird nun durch eine passende Modellbildung eine für die Informationstechnik verwendbare Lösung gefunden. Durch eine grobe Verallgemeinerung wird das System vereinfacht – unter Erhaltung der wesentlichen Eigenschaften. Die Synapsen der Nervenzelle werden hierbei durch die Addition gewichteter Eingaben abgebildet, die Aktivierung des Zellkerns durch eine Aktivierungsfunktion mit Schwellenwert. Die Verwendung eines Addierers und Schwellenwerts findet sich so schon in der McCulloch-Pitts-Zelle von 1943. 
 
 \section{Bestandteile}
 
@@ -12,7 +12,7 @@ Ein künstliches Neuron $j$ kann durch vier Basiselemente beschrieben werden:
   \item Wichtung: Die Gewichte $w_{ij}$ bestimmen den Grad des Einflusses, den die Eingaben des Neurons in der Berechnung der späteren Aktivierung einnehmen. Abhängig von den Vorzeichen der Gewichte kann eine Eingabe hemmend (inhibitorisch) oder erregend (exzitatorisch) wirken. Ein Gewicht von 0 markiert eine nicht existente Verbindung zwischen zwei Knoten.
   \item Übertragungsfunktion: Die Übertragungsfunktion $\sigma$ berechnet anhand der Wichtung der Eingaben die Netzeingabe des Neurons.
   \item Aktivierungsfunktion: Die Ausgabe des Neurons wird schließlich durch die Aktivierungsfunktion $\varphi$ bestimmt. Die Aktivierung wird beeinflusst durch die Netzeingabe aus der Übertragungsfunktion sowie einem Schwellenwert. 
-  \item Schwellenwert: Das Addieren eines Schwellenwerts $\theta_j$ zur Netzeingabe verschiebt die gewichteten Eingaben. Die Bezeichnung bestimmt sich aus der Verwendung einer Schwellenwertfunktion als Aktivierungsfunktion, bei der das Neuron aktiviert wird, wenn der Schwellenwert überschritten ist. Die biologische Motivierung dabei ist das Schwellenpotential bei Nervenzellen. Mathematisch gesehen wird die Trennebene, die den Merkmalsraum auftrennt, durch einen Schwellenwert mit einer Translation verschoben.
+  \item Schwellenwert: Das Addieren eines Schwellenwerts $\theta_j$ zur Netzeingabe verschiebt die gewichteten Eingaben. Die Bezeichnung bestimmt sich aus der Verwendung einer Schwellenwertfunktion als Aktivierungsfunktion, bei der das Neuron aktiviert wird, wenn der Schwellenwert überschritten ist. Die biologische Motivierung dabei ist das Schwellenpotential bei Nervenzellen. Mathematisch gesehen wird die Trennebene, die den Merkmalsraum auftrennt, durch einen Schwellenwert mit einer Translation verschoben. \cite{dendr}
 \end{enumerate}
 
 Durch einen Verbindungsgraphen werden folgende Elemente festgelegt:
